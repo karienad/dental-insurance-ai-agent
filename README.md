@@ -27,6 +27,7 @@ The healthcare industry faces significant verification challenges:
 ## System Architecture
 
 ![Dental Insurance AI Agent Architecture](https://github.com/newking9088/dental_office_ai_agent/blob/main/ai_agent_architecture.png)
+
 *Figure 1: High-level architecture diagram of the Dental Insurance AI Agent showing the interaction between speech processing, NLP, and verification components*
 
 ### Core Components
@@ -129,7 +130,7 @@ pip install -r requirements.txt
 ```
 
 4. Configure environment:
-   * Rename `api_key_example.env` to `.env` and paste your GOOGLE_API_KEY in there
+   * Rename `api_key_example.env` to `.env` and paste your `GOOGLE_API_KEY` in there
 
 ## Features & Benefits
 
