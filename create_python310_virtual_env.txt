@@ -1,0 +1,9 @@
+# Install python 3.10 in your system
+
+# Create a virtual environment using python3.10
+py -3.10 -m venv myenv
+
+# activate the python environment
+myenv\Scripts\activate
+
+
