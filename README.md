@@ -209,12 +209,15 @@ Why avoid echo?
 
 Best Practices 🔒
 
-a. Never commit your `.env` file to version control
-b. Add `.env` to your `.gitignore`
-c. Keep a clean example file (`.env.example`) for reference
-d. Regularly rotate your API keys
-e. Use different keys for development and production
+- Never commit your `.env` file to version control
 
+- Add `.env` to your `.gitignore`
+
+- Keep a clean example file (`.env.example`) for reference
+
+- Regularly rotate your API keys
+
+- Use different keys for development and production
 
 ## Features & Benefits
 
