@@ -7,7 +7,7 @@ An AI-powered system that automates dental insurance verification processes, cap
 
 ## Quicklinks
 
-* [Blog Post](https://nycdatascience.com/blog/?p=100015&preview=true&aiEnableCheckShortcode=true)
+* [Blog Post](https://nycdatascience.com/blog/student-works/the-smart-solution-to-health-insurance-verification-ai-powered-intelligence/)
 
 ## Industry Challenges & Impact
 
