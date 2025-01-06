@@ -115,14 +115,13 @@ cd dental_office_ai_agent
 
 **✅ Recommended: Using uv (Faster Alternative)**
 
-1. Install uv first:
+i. Install uv first:
 ```bash
 pip install uv
 ```
 
-2. Create and activate virtual environment:
+ii. Create and activate a virtual environment:
 ```bash
--- Create a virtual environment
 uv venv
 
 -- Activate: Windows
@@ -132,7 +131,7 @@ uv venv
 source .venv/bin/activate
 ```
 
-3. Install dependencies (after activation):
+iii. Install dependencies (after activation):
 ```bash
 -- Install using uv (much faster)
 uv pip install -r requirements.txt
@@ -142,13 +141,13 @@ uv pip install -r requirements.txt
 
 If you prefer using the standard Python virtual environment:
 
-1. Create virtual environment:
+i. Create a virtual environment:
 ```bash
 -- Windows/macOS/Linux
 python -m venv .venv
 ```
 
-2. Activate virtual environment:
+ii. Activate virtual environment:
 ```bash
 -- Windows
 .venv\Scripts\activate
@@ -157,7 +156,7 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-3. Install dependencies:
+iii. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
@@ -167,20 +166,11 @@ pip install -r requirements.txt
 - Make sure you have Python 3.10 or later installed
 - Always activate the virtual environment before installing packages
 
-4. Setting Up Your API Key Securely
-
-Initial Setup
-
-First, rename the example environment file and set up your API key:
-
-1. Rename the example file:
-```bash
-mv api_key_example.env .env
-```
+3. Setting Up Your API Key Securely
 
 Recommended Method ✅
 
-2. Create or modify the `.env` file securely:
+i. Create or modify the `.env` file securely:
    * Create the file (if it doesn't exist):
    ```bash
    touch .env
@@ -190,15 +180,17 @@ Recommended Method ✅
    ```text
    GOOGLE_API_KEY=your_api_key_here
    ```
+Alternatively, rename the example environment file and set up your API key (not recommended). Rename the example file:
+```bash
+mv api_key_example.env .env
+```
 
-Security Settings
-
-3. Set proper file permissions:
+ii. Set proper file permissions:
 ```bash
 chmod 600 .env
 ```
 
-4. [Optional] Load the environment variables:
+iii. [Optional] Load the environment variables:
 ```bash
 source .env
 ```
@@ -217,11 +209,11 @@ Why avoid echo?
 
 Best Practices 🔒
 
-1. Never commit your `.env` file to version control
-2. Add `.env` to your `.gitignore`
-3. Keep a clean example file (`.env.example`) for reference
-4. Regularly rotate your API keys
-5. Use different keys for development and production
+a. Never commit your `.env` file to version control
+b. Add `.env` to your `.gitignore`
+c. Keep a clean example file (`.env.example`) for reference
+d. Regularly rotate your API keys
+e. Use different keys for development and production
 
 
 ## Features & Benefits
