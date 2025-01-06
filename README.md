@@ -112,16 +112,49 @@ cd dental_office_ai_agent
 ```
 
 2. Set up Python 3.10 virtual environment:
-   * First, follow the instructions in the Python 3.10 virtual environment setup file to ensure proper configuration
-   * Then create and activate the virtual environment:
-```bash
-# Windows
-python -m venv myenv
-myenv\Scripts\activate
 
-# macOS/Linux
-python -m venv myenv
-source myenv/bin/activate
+**✅ Recommended: Using uv (Faster Alternative)**
+
+1. Install uv first:
+```bash
+pip install uv
+```
+
+2. Create and activate virtual environment:
+```bash
+-- Create a virtual environment
+uv venv
+
+-- Activate: Windows
+.venv\Scripts\activate
+
+-- Activate: macOS/Linux
+source .venv/bin/activate
+```
+
+3. Install dependencies (after activation):
+```bash
+-- Install using uv (much faster)
+uv pip install -r requirements.txt
+```
+
+**Traditional Method**
+
+If you prefer using the standard Python virtual environment:
+
+1. Create virtual environment:
+```bash
+-- Windows/macOS/Linux
+python -m venv .venv
+```
+
+2. Activate virtual environment:
+```bash
+-- Windows
+.venv\Scripts\activate
+
+-- macOS/Linux
+source .venv/bin/activate
 ```
 
 3. Install dependencies:
@@ -129,8 +162,67 @@ source myenv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Configure environment:
-   * Rename `api_key_example.env` to `.env` and paste your `GOOGLE_API_KEY` in there
+**Note**
+- The `.venv` directory should be added to your `.gitignore`
+- Make sure you have Python 3.10 or later installed
+- Always activate the virtual environment before installing packages
+
+4. Setting Up Your API Key Securely
+
+Initial Setup
+
+First, rename the example environment file and set up your API key:
+
+1. Rename the example file:
+```bash
+mv api_key_example.env .env
+```
+
+Recommended Method ✅
+
+2. Create or modify the `.env` file securely:
+   * Create the file (if it doesn't exist):
+   ```bash
+   touch .env
+   ```
+   * Open the file in your preferred text editor
+   * Add your API key:
+   ```text
+   GOOGLE_API_KEY=your_api_key_here
+   ```
+
+Security Settings
+
+3. Set proper file permissions:
+```bash
+chmod 600 .env
+```
+
+4. [Optional] Load the environment variables:
+```bash
+source .env
+```
+
+⚠️ Warning: Unsafe Method to Avoid
+
+Avoid using the following method as it may expose your API key:
+```bash
+echo "GOOGLE_API_KEY='your_api_key_here'" > .env  # Not recommended
+```
+
+Why avoid echo?
+- API key may be saved in shell history
+- Key could be visible in process listings
+- Risk of accidental file overwrite
+
+Best Practices 🔒
+
+1. Never commit your `.env` file to version control
+2. Add `.env` to your `.gitignore`
+3. Keep a clean example file (`.env.example`) for reference
+4. Regularly rotate your API keys
+5. Use different keys for development and production
+
 
 ## Features & Benefits
 
