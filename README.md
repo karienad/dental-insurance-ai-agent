@@ -267,6 +267,15 @@ Best Practices 🔒
 * Operational efficiency improvement: 4-6 hours daily
 * 24/7 verification capability
 
+## Acknowledgement
+
+The dental health and real estate sectors' data science implementations shown in this portfolio were completed during my collaboration with [GoDental.ai](https://www.godental.ai/) and are shared with their permission. Special thanks to my mentors:
+
+* [Cole Ingraham](https://www.linkedin.com/in/cole-ingraham-05377b12/) - Technical Lead at GoDental.ai
+* [Vivian Zhang](https://www.linkedin.com/in/vivianszhang/) - CEO at NYC Data Science Academy
+
+Their insights and support were instrumental in developing these innovative solutions. This demonstrates the power of collaboration between industry and data science in creating impactful solutions.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests or open issues for improvements.
