@@ -51,6 +51,11 @@ This AI Agent helps reduce denials, save operational costs, and improve staff pr
 | Audio Input         | PyAudio, PortAudio                          |
 
 ---
+### 🗺 AI Agent Architecture Diagram
+
+Here’s a visual flow of how the dental insurance verification AI agent works:
+
+![AI Architecture](assets/ai_agent_architecture.png)
 
 ## 🗂️ Architecture Overview
 
